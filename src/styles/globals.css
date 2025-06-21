@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  * {
+    @apply border-gray-200/50;
+  }
+  
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-gray-50/30 text-gray-900 font-['Inter',sans-serif] leading-relaxed;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white/80 backdrop-blur-sm border border-gray-200/30 rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 p-4 md:p-6 lg:p-8;
+  }
+  
+  .card-subtle {
+    @apply bg-white/60 backdrop-blur-sm border-0 rounded-xl shadow-sm hover:shadow-md hover:bg-white/70 transition-all duration-300 p-4 md:p-6;
+  }
+  
+  .metric-card {
+    @apply bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-sm border border-gray-200/20 rounded-2xl p-4 md:p-6 shadow-sm hover:shadow-lg hover:from-white/95 hover:to-white/80 transition-all duration-300;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent;
+  }
+  
+  .glass {
+    @apply bg-white/20 backdrop-blur-md border border-white/30;
+  }
+  
+  .chart-container {
+    @apply card;
+    height: 250px;
+  }
+  
+  @media (min-width: 768px) {
+    .chart-container {
+      height: 300px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .chart-container {
+      height: 350px;
+    }
+  }
+}
