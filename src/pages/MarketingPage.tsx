@@ -1,6 +1,5 @@
 import { useEffect, useState, Suspense } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
-import ReactECharts from 'echarts-for-react'
 import { fetchMarketingData, fetchHeatmapData } from '../services/mockData'
 import { MarketingData, HeatmapData } from '../types'
 

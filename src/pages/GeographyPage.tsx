@@ -1,6 +1,5 @@
 import { useEffect, useState, Suspense } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ScatterChart, Scatter } from 'recharts'
-import ReactECharts from 'echarts-for-react'
 import { fetchGeographyData } from '../services/mockData'
 import { GeographyData } from '../types'
 
